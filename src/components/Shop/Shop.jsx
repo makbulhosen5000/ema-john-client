@@ -35,11 +35,6 @@ const Shop = () => {
                     <div className="card-body">
                         <h1 className="text-center underline">Order Summery</h1>
                         <h2>Selected Item: {cart.length}</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div className="card-actions justify-end">
-                        <button className="btn btn-success w-full">Buy Now</button>
-                        <button className="btn btn-primary w-full">Buy Now</button>
-                        </div>
                     </div>
                 </div>
             </div>
