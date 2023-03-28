@@ -33,10 +33,9 @@ const Shop = () => {
                     key={product.id} />)
                     }
                 </div>
-                <div className="w-full sm:h-screen md:h-screen lg:h-screen  bg-warning shadow-xl">
-                    <div className="card-body">
+                <div className="w-full sm:h-screen md:h-screen lg:h-screen  bg-warning shadow-xl sticky top-0 ">
+                    <div className="card-body ">
                         <Cart cart={cart} />
-                      
                     </div>
                 </div>
             </div>
