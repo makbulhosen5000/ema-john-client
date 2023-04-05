@@ -4,9 +4,9 @@ import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 
 const Shop = () => {
-    const [products,setProducts] = useState([]);
-    const [cart, setCart] = useState([])
 
+    const [products,setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(()=>{
         const loadData = async()=>{
