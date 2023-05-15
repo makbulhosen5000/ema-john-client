@@ -1,8 +1,8 @@
 import React from 'react';
 import { ArchiveBoxXMarkIcon } from "@heroicons/react/24/solid";
-import { FaTrashAlt } from "react-icons/fa";
+
 const ReviewItem = ({ product, handleRemoveFromCart }) => {
-  const { id, name, price, quantity, shipping, img } = product;
+  const { _id, name, price, quantity, shipping, img } = product;
   return (
     <div className="flex justify-between mx-20 border-2 bg-slate-400 p-3 rounded-md">
       <div className="text-start">
@@ -12,7 +12,7 @@ const ReviewItem = ({ product, handleRemoveFromCart }) => {
         <p>quantity: {quantity}</p>
         <p>shipping:{shipping}</p>
       </div>
-      <button onClick={()=>handleRemoveFromCart(id)}>
+      <button onClick={()=>handleRemoveFromCart(_id)}>
         <ArchiveBoxXMarkIcon className="w-8" />
       </button>
     </div>
